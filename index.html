@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canculator</title>
+  <link rel="stylesheet" href="./map.css">
+</head>
+<body>
+
+    <div class="main">
+      <h1 id="text">Calculator</h1>
+
+       <button class="dark">Dark mode</button>
+
+      <div class="inp">
+        <input type="text" name="ekran" id="teng" disabled placeholder="0">
+      </div>
+      <div class="main-1">
+        <div class="main-2">
+          <input type="button" value="1" onclick="Raqam(1)">
+          <input type="button" value="2" onclick="Raqam(2)">
+          <input type="button" value="3" onclick="Raqam(3)">
+          <input type="button" value="+" onclick="Raqam('+')">
+        </div>
+        <div class="main-2">
+          <input type="button" value="4" onclick="Raqam(4)">
+          <input type="button" value="5" onclick="Raqam(5)">
+          <input type="button" value="6" onclick="Raqam(6)">
+          <input type="button" value="-" onclick="Raqam('-')">
+        </div>
+        <div class="main-2">
+          <input type="button" value="7" onclick="Raqam(7)">
+          <input type="button" value="8" onclick="Raqam(8)">
+          <input type="button" value="9" onclick="Raqam(9)">
+          <input type="button" value="/" onclick="Raqam('/')">
+        </div>
+        <div class="main-2">
+          <input type="button" id="clear" value="c" onclick="Clear(0)">
+          <input type="button" value="0" onclick="Raqam(0)">
+          <input type="button" onclick="Equal()" value="="></input>
+          <input id="inpt" type="button" value="*" onclick="Raqam('*')">
+        </div>
+        <div class="main-2">
+          <button id="delete" value="d"  onclick="Delete()"></button>
+          <input type="button" value="00" onclick="Raqam(00)">
+          <input type="button" onclick="Raqam('%')" value="%"></input>
+          <input id="inpt" type="button" value="AC" onclick="Raqam('AC')">
+        </div>
+      </div>
+
+     <div id="audio" style="margin-top: -300px; margin-right: 50px;">
+        <audio src="./JONY, HammAli, Navai - Без тебя я не я.mp3" autoplay controls loop></audio>
+      </div> 
+    </div>
+
+
+
+  <script src="./app.js"></script>
+</body>
+</html>
